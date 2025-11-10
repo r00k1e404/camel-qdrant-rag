@@ -63,5 +63,3 @@ Embedding: TencentBAC/Conan-embedding-v1
 ![fail](./assets/fail.png)
 
 Made with ❤️ using CAMEL + Qwen + Qdrant + Gradio
-
-test
