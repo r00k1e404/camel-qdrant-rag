@@ -64,3 +64,4 @@ Embedding: TencentBAC/Conan-embedding-v1
 
 Made with ❤️ using CAMEL + Qwen + Qdrant + Gradio
 
+test
