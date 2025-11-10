@@ -1,6 +1,6 @@
-# RAG 问答系统（基于 Qwen + Qdrant）
+# RAG 问答系统
 
-本项目是一个基于 **检索增强生成（Retrieval-Augmented Generation, RAG）** 架构的问答系统，使用本地向量数据库 **Qdrant** 存储知识片段，并通过大语言模型（Qwen-Max）生成答案。适用于对特定文档集（如 OCR 提取的文本）进行语义问答。
+本项目是一个基于 **检索增强生成（Retrieval-Augmented Generation, RAG）** 架构的问答系统，使用本地向量数据库 **Qdrant** 存储知识片段，并通过大语言模型（Qwen-Max）生成答案。适用于对特定文档集进行语义问答。
 
 ## ✨ 功能特点
 
@@ -51,17 +51,17 @@ print(single_agent("劳动的二重性指什么?"))
 
 ## 📦 技术栈
 
-- **LLM**: Qwen-Max（通义千问）  
+- **LLM**: Qwen-Max
 - **Embedding**: TencentBAC/Conan-embedding-v1  
-- **向量数据库**: Qdrant（本地模式）  
-- **框架**: CAMEL（用于 Agent 和存储抽象）  
+- **向量数据库**: Qdrant
+- **框架**: CAMEL  
 - **前端**: Gradio  
 
 ## 📝 注意事项
 
 - 首次运行会下载嵌入模型，请确保模型放在 `./models` 目录下。
 - 所有回答严格基于检索到的上下文，不会编造信息。
-- 本项目仅用于学习和演示，生产环境需考虑性能优化与安全措施。
+- 本项目为个人学习，多有不足。
 
 ## 效果演示
 
