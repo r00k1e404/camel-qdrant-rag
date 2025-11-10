@@ -29,7 +29,7 @@ QWEN_API_KEY=your_qwen_api_key_here
 from qdrant import QdrantDB
 
 db = QdrantDB()
-db.save_from_json_file("small_ocr_content_list.json")
+db.save_from_json_file("./data/small_ocr_content_list.json")
 print("✅ 知识库初始化完成！")
 ```
 
