@@ -10,15 +10,6 @@
 - 基于检索结果，由 Qwen-Max 模型生成准确、简洁、有来源依据的回答。
 - 提供 Gradio Web 界面，支持交互式问答与检索内容查看。
 
-## 📁 项目结构
-├── small_ocr_content_list.json     # 示例知识库（OCR 提取的马克思《资本论》节选）
-├── qdrant.py                       # Qdrant 向量数据库封装
-├── vector_retriever.py             # 向量检索器
-├── rag_agent.py                    # RAG 问答核心逻辑
-├── gradio_show.py                  # Gradio Web 界面
-├── .env                            # 存放 API 密钥（需自行创建）
-└── qdrant_data/                    # 本地 Qdrant 数据库存储目录（自动生成）
-
 ## 🔑 配置 API 密钥
 在阿里云百炼平台获取 Qwen API Key。
 创建 .env 文件：
@@ -48,7 +39,7 @@ Embedding: TencentBAC/Conan-embedding-v1
 前端: Gradio
 
 ## 📝 注意事项
-首次运行会下载嵌入模型，请耐心等待。
+首次运行会下载嵌入模型，确保放在./models目录下。
 所有回答严格基于检索到的上下文，不会编造信息。
 本项目仅用于学习和演示，生产环境需考虑性能优化与安全措施。
 
